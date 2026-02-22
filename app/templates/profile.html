@@ -1,0 +1,25 @@
+{% extends "base.html"%}
+
+{% block title %} Profile {% endblock %}
+
+{% block main %}
+    <div id="profile-container">
+        <img src="{{ url_for('static', filename='images/picture.jpg') }}" alt="Profile Picture" class="profile-pic">
+        <h1>{{name}}</h1>
+        <p><i>@narutouzumaki</i></p>
+        <p>Kingston, Jamaica</p>
+        <p>{{date_joined}}</p>
+    </div>
+    <div id="other-info">
+        <p>I am a smart and talented young man who loves website design and development. Contact me if you'd like to work together on a new project.</p>
+        <div id="stats">
+           <h4>2.5M</h4>
+           <h4>7</h4>
+           <h4>100</h4>
+            <p>Followers</p>
+            <p>Posts</p>
+            <p>Following</p>
+        </div>
+        <button id="follow" type="button">Follow</button>
+    </div>
+{% endblock %}

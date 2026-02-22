@@ -1,3 +1,46 @@
 body {
     padding-top: 5rem;
 }
+#profile-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EE4816;
+    color: #fff;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+#profile-container p{
+    color: #dddddd;
+}
+#profile-container img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#other-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #858282;
+}
+#stats{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+#stats h4{
+    color: #000;
+}
+
+#other-info button{
+    background-color: #EE4816;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 150px;
+}
