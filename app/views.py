@@ -15,7 +15,7 @@ def home():
 
 def formatted_date_joined(date):
     """Return the date joined in a nicely formatted way of month comma year."""
-    date = str(date.strftime('%B, %Y'))
+    date = str("Joined " + date.strftime('%B, %Y'))
     return date
 
 
